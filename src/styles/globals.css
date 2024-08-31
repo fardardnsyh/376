@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply transition-all duration-100 ease-in-out bg-[#ececec] dark:bg-[#181818];
+    }
+
+    ol,
+    ul {
+        list-style-type: list-revert;
+        margin-left: 1.5rem;
+    }
+
+    ::marker {
+        font-weight: bold;
+    }
+
+    strong {
+        color: transparent;
+    }
+}
+
+html,
+body,
+#__next {
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    border-color: #c1c1c1;
+}
